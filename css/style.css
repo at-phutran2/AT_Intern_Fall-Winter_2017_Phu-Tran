@@ -127,6 +127,14 @@
 .main-2-div-image img {
 	width: 24.8%;
 }
+.main-2-footer {
+	background: #0b9444;
+	height: 40px; 
+}
+.main-2-footer button{
+	margin: 5px 0px 5px 0px;
+	padding: 0px 10px 0px 10px;
+}
 /*projects*/
 #main-3 {
 	text-align: center;
@@ -224,4 +232,25 @@
 }
 .main-5-article img {
 	width: 100%;
+}
+.main-6-footer {
+	background: #0b9444;
+	height: 40px; 
+}
+.main-6-footer button{
+	margin: 5px 0px 5px 0px;
+	padding: 0px 10px 0px 10px;
+}
+#main-7 {
+	width: 100%;
+	display: flex;
+}
+.main-7-form {
+	width: 50%;
+}
+.main-7-info {
+	width: 50%;
+}
+#main-8 p {
+	float: left;
 }
