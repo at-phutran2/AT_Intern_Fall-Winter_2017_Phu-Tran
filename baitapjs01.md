@@ -22,8 +22,6 @@ disadvantage:
 **differnce beetween == & ===**
   The == operator will compare for equality after doing any necessary type conversions. The === operator will not do the conversion, so if two values are not the same type === will simply return false.
 **var let const**
-  - const use to declare dùng để khai báo một hằng số - là một giá trị không thay đổi được trong suốt quá trình chạy.
-  - let tạo ra một biến chỉ có thể truy cập được trong block bao quanh nó, khác với var - tạo ra một biến có phạm vi truy cập xuyên suốt function chứa nó.
     - let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. 
     - var defines a variable globally, or locally to an entire function regardless of block scope.
     - const  The value of a constant cannot change through re-assignment, and it can't be redeclared.
