@@ -21,6 +21,7 @@ disadvantage:
 
 **differnce beetween == & ===**
   The == operator will compare for equality after doing any necessary type conversions. The === operator will not do the conversion, so if two values are not the same type === will simply return false.
+  
 **var let const**
     - let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. 
     - var defines a variable globally, or locally to an entire function regardless of block scope.
@@ -28,7 +29,7 @@ disadvantage:
 ### Playground
 1. 
 function sum(a,b){
-  if(a === b) {
+  if (a === b) {
     return 3 * (a + b)
   } else 
     return a + b;
@@ -37,7 +38,7 @@ console.log(sum(5,10));
 
 2. 
 function abs(num) {
-  if(num < 19) {
+  if (num < 19) {
     return 19 - num;
   } else if (num === 19) {
     return 0;
@@ -64,7 +65,7 @@ function Replace(str) {
   let arr = [];
   for(let i = 0; i < 10; i++) {
     let num = str.replace('*', i);
-    if(num % 6 === 0) {
+    if (num % 6 === 0) {
       arr.push(num);
     }
   }
