@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>bt1</title>
+</head>
+<body>
+<script>
+function checktype(type) {
+  return typeof type;
+    }    
+  let a = new Number();
+    document.write(checktype(a) + "<br/>");
+  a = "abc";
+    document.write(checktype(a) + "<br/>");
+  a = true;
+    document.write(checktype(a) + "<br/>");
+  let b;
+    document.write(checktype(b) + "<br/>");
+  a = function() {};
+    document.write(checktype(a)+ "<br/>");
+  a = 123;
+    document.write(checktype(a));
+
+</script>
+</body>
+</html>

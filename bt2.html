@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bt2</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<script>
+function unique_char(str1) {
+  let str = str1;
+  let uniql = "";
+  for (var x=0; x<str.length; x++)
+  {
+    if(uniql.indexOf(str.charAt(x))==-1)
+    {
+      uniql += str[x];  
+    }
+  }
+  return uniql;  
+}  
+alert(unique_char("tranvietphu"));
+</script>
+</body>
+</html>
