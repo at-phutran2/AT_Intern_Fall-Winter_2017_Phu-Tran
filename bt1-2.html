@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bt1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style> 
+#transit {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s;
+  transition: width 1s;
+}
+</style>
+</head>
+<body>
+
+<p id="transit">myname</p>
+<button onclick="removeFunc()">Remove Function</button>
+<script>
+var idEl = document.getElementById('transit');
+idEl.addEventListener("mouseover", myFunction);
+function myFunction() {
+  idEl.innerHTML = "tranvietphu";
+  idEl.style.backgroundColor = "pink";
+}
+function removeFunc() {
+  idEl.style.backgroundColor = "red";
+  idEl.innerHTML = "myname";
+  idEl.removeEventListener("mouseover", myFunction);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bt8</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+  .democlass {
+    color: red;
+  }
+  </style>
+</head>
+<body>
+<h1 class="democlass">Hello World</h1>
+<p>test set attribute</p>
+<p id="demo"></p>
+<button onclick="myFunction()">set</button>
+<button onclick="myFunction1()">remove</button>
+<button onclick="myFunction2()">get</button>
+<script>
+function myFunction() {
+  document.getElementsByTagName("P")[0].setAttribute("class", "democlass");
+}
+function myFunction1() {
+    document.getElementsByTagName("P")[0].removeAttribute("class"); 
+}
+function myFunction2() {
+    var x = document.getElementsByTagName("H1")[0].getAttribute("class"); 
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+</body>
+</html>

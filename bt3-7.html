@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<ul id="myList1">
+<li>Coffee</li>
+<li>Tea</li>
+
+</ul>
+<p>Click the button to append an item to the end of the list.</p>
+<button onclick="myFunction('Mango')">Mango</button>
+<button onclick="myFunction1('data')">del</button>
+<button onclick="myFunction2('')">replace</button>
+<button onclick="myFunction('Milk')">Milk</button>
+<button onclick="myFunction('Tea')">Tea</button>
+<button onclick="myFunction('Lemon')">Lemon</button>
+<button onclick="myFunction3('data')">clone</button>
+<ul id="myList2">
+<li>Coffee</li>
+<li>Tea</li>
+<script>
+function myFunction(data) {
+  var createElid = document.createElement("li") ;
+  var createTextNode = document.createTextNode(data);
+  createElid.appendChild(createTextNode);
+  document.getElementById("myList1").appendChild(createElid);
+}
+function myFunction1(data) {
+  // var list = document.getElementById("myList");    
+  var del = document.getElementById("myList1");
+  del.removeChild(del.childNodes[0]);
+  // del.removeChild(del.);
+}
+function myFunction2(data) {
+    var textnode = document.createTextNode("Water");
+    var item = document.getElementById("myList1").childNodes[0];
+    item.replaceChild(textnode, item.childNodes[0]);
+}
+function myFunction3(data) {
+    var itm = document.getElementById("myList1").lastChild;
+    var cln = itm.cloneNode(true);
+    document.getElementById("myList2").appendChild(cln);
+}
+</script>
+</script>
+</body>
+</html>
