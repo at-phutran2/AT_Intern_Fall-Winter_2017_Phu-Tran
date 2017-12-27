@@ -1,0 +1,48 @@
+.banner {
+  height: 223px;
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  background-image: url("../images/header-watercolor-left.png"), url("../images/header-watercolor-right.png");
+  background-repeat: no-repeat,no-repeat;
+  background-position: left top,right top;
+}
+
+.navigation {
+  display: block;
+  border: 1px double #f0f0f0;
+  text-align: center;
+  padding: 12px 0 0;
+  width: 100%;
+  text-transform: uppercase;
+  .menu-item {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    a {
+      padding: 5px 25px;
+    }
+    &:last-child:after {
+      content: '';
+    }
+  }
+  .menu-item:after { 
+      content: '/';
+      color: #b6b4b4;
+      top: 3px;
+      position: absolute;
+      right: -5px;
+      font-weight: 700;
+      font-size: 13px;
+  }
+}
+.banner1 {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  img {
+    width: 100%;
+  }
+}
