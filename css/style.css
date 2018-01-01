@@ -48,10 +48,10 @@ h1 {
   font-size: 46px; }
 
 h2 {
-  font-size: 32px; }
+  font-size: 45px; }
 
 h3 {
-  font-size: 28px; }
+  font-size: 45px; }
 
 h4 {
   font-size: 26px; }
@@ -71,6 +71,35 @@ b {
 p {
   font-size: 14px;
   line-height: 23px; }
+
+.btn {
+  color: #FFFFFF;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 14px;
+  padding-bottom: 6px;
+  padding-left: 39px;
+  padding-right: 39px;
+  text-transform: none;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  font-family: "Zeyada"; }
+
+.btn-primary {
+  background-color: #79c3d7; }
+
+.btn-primary:hover {
+  background-color: #45afca; }
+
+.news-title {
+  font-family: "Zeyada";
+  font-size: 45px; }
+
+p {
+  font-family: "Open Sans";
+  font-size: 14px; }
 
 img {
   max-height: 100%;
@@ -106,17 +135,28 @@ a:hover {
 
 .navigation {
   display: block;
-  border: 1px double #f0f0f0;
+  border: 3px double #f0f0f0;
   text-align: center;
+  margin-bottom: 40px;
   padding: 12px 0 0;
   width: 100%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2px; }
+  .navigation .main-menu {
+    line-height: 1.8em; }
   .navigation .menu-item {
     display: inline-block;
-    margin: 10px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
     position: relative; }
     .navigation .menu-item a {
-      padding: 5px 25px; }
+      padding: 5px 25px;
+      font-size: 14px; }
     .navigation .menu-item:last-child:after {
       content: ''; }
   .navigation .menu-item:after {
@@ -128,11 +168,107 @@ a:hover {
     font-weight: 700;
     font-size: 13px; }
 
+.footer {
+  float: left; }
+
 .banner1 {
-  height: auto;
-  max-width: 100%;
-  border: none;
-  border-radius: 0;
-  box-shadow: none; }
-  .banner1 img {
+  display: block;
+  position: relative; }
+  .banner1 .banner1-img {
     width: 100%; }
+  .banner1::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/banner-overlay-top-tile.png"); }
+  .banner1::after {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/banner-overlay-bottom-tile.png");
+    background-position: right top; }
+
+.container {
+  width: 89%;
+  margin: auto; }
+
+.content-about {
+  border: 1px solid #b6b4b4;
+  width: 100%;
+  margin: 40px 0px;
+  border-left: none;
+  border-right: none; }
+  .content-about .section-company-info-about {
+    padding: 21px 0px; }
+  .content-about p {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 17px;
+    line-height: 30px;
+    margin: 17px 0px; }
+
+.col-main {
+  float: left;
+  width: 60%; }
+
+.news-des {
+  margin: 14px 0px 21px; }
+
+.news {
+  border: 1px solid #b6b4b4;
+  margin-bottom: 100px;
+  position: relative;
+  padding-bottom: 50px; }
+  .news .news-content {
+    padding-bottom: 48px; }
+  .news .news-image {
+    display: block; }
+    .news .news-image img {
+      width: 100%; }
+  .news .new-title {
+    text-align: center; }
+  .news .btn-primary {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -23px; }
+
+.col-right {
+  float: left;
+  margin-left: 20px;
+  max-width: 30%; }
+
+.col-right {
+  border: 1px solid #b6b4b4; }
+
+.about {
+  position: relative;
+  border: 1px solid #b6b4b4; }
+
+.categories {
+  position: relative;
+  border: 1px #b6b4b4; }
+
+.tags {
+  position: relative;
+  border: 1px #b6b4b4; }
+
+.instagram {
+  position: relative;
+  border: 1px solid #b6b4b4; }
+
+.aside-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -23px;
+  font-family: "Zeyada";
+  color: #5da5b9; }

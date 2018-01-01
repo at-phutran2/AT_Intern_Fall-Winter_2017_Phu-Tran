@@ -1,0 +1,230 @@
+.banner1 {
+  display: block;
+  position: relative;
+  .banner1-img{
+    width: 100%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    // padding-bottom: 75%;
+    height: 120px;
+    width: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/banner-overlay-top-tile.png");
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    // padding-top: 75%;
+    height: 120px;
+    width: 100%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/banner-overlay-bottom-tile.png");
+    background-position: right top;
+  }
+}
+
+.container {
+  width: 89%;
+  margin: auto;
+}
+.content-about {
+    border: 1px solid map-get($color, border-color);
+    width: 100%;
+    margin: 40px 0px;
+    border-left: none;
+    border-right: none;
+  .section-company-info-about {
+    padding: 21px 0px;
+  }
+  p {
+    text-align: center;
+    font-family: $font-primary;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 17px 0px;
+  }
+}
+
+.col-main {
+  float:left;
+  width: 60%;
+}
+.news-des {
+  margin: 14px 0px 21px ;
+}
+.news {
+  border: 1px solid map-get($color, border-color);
+  margin-bottom: 100px;
+  position: relative;
+  padding-bottom: 50px;
+  .news-content {
+    padding-bottom: 48px;
+  }
+  .news-image {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+  .new-title {
+    text-align: center;
+  }
+  .btn-primary {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -23px; 
+  }
+}
+.col-right {
+  float:left;
+  margin-left:20px;
+  max-width: 30%;
+}
+.col-right {
+  border: 1px solid map-get($color, border-color);
+}
+.about {
+  position: relative;
+  border: 1px solid map-get($color, border-color);;
+}
+  .categories {
+  position: relative;
+  border: 1px map-get($color, border-color);
+}
+.tags {
+  position: relative;
+  border: 1px map-get($color, border-color);
+}
+.instagram {
+  position: relative;
+  border: 1px solid map-get($color, border-color);
+}
+.aside-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -23px;
+  font-family: $font-title;
+  color: map-get($color, a); 
+  }
+
+// .wrap-content{
+//   padding: 49px, 10px, 12px;
+//   text-align: center;
+// }
+
+// .right-container {
+//   width: 89%;
+//   margin: auto;
+//   max-width: 730px;
+//   max-height: 586px;
+//   margin-bottom: 100px;
+//   p {
+//     margin: 48px 21px ;
+//   }
+// }
+// .best-location {
+//   float:right;
+// }
+
+  
+
+
+// // .banner1-img:before {
+// //   margin: 10px;
+// //   display: block;
+// // }
+// .main-content {
+//   width: 100%; 
+//   margin: 17px; 
+// }
+// .company-info-about {
+//   padding: 10px;
+//   text-align: center;
+//     padding: 21px 0px;
+//     margin-top: 30px;
+//     // border-top: 1px solid map-get($color, light);
+//     // border-bottom: 1px solid map-get($color, light);
+  
+//       p {
+//         font-size: 17px;
+//         line-height: 1.8em;
+//         // -webkit-margin-before: 1em;
+//         // -webkit-margin-after: 1em;
+//       }
+//  }
+
+// // .best-location {
+// //   .aside-left-best-location {
+// //   }
+// //  }
+// //  }
+// // .categories-list {
+// //     .catagories-item {
+// //     text-transform: uppercase;
+// //     }
+
+// //  }
+// //  .tags-list {
+// //     .tags-item a {
+// //     text-transform: uppercase;
+// //     }
+// // }
+// // .container{
+// //   max-width: 1140px;
+// //   margin: 0 auto;
+// //   padding: 0 40px;
+// //   .left-container{
+// //   display: block;
+// //   width: 100%;
+// //   }
+// //   .best-location {
+// //   width: 50%;
+// //   float: left;
+// //   background-image: url("../images/left-side-tsunami.jpg");
+// //   background-repeat: no-repeat;
+// //   background-position: left;
+// //   }
+// //   .time-holiday {
+// //     width: 50%;
+// //     clear: left;
+// //     float: left;
+// //     background-image: url("../images/left-side-tsunami.jpg");
+// //     background-repeat: no-repeat;
+// //   }
+// //   .right-container {
+// //   display: block;
+// //   text-align: center;
+// //   padding: 12px 0 0;
+// //   width: 100%;
+// //     width: 100%;
+// //     float:right;
+// //     clear: left;
+// //   }
+// //   .about {
+// //     width: 50%;
+// //     float: right;
+// //   }
+// //   .categories {
+// //     width: 50%;
+// //     float: right;
+// //     clear: right;
+// //   }
+// //   .tags {
+// //     width: 50%;
+// //     float: right;
+// //     clear: right;
+// //   }
+// //   .instagram {
+// //     width: 50%;
+// //     float: right;
+// //     clear: right;
+// //   } 
+// // }
