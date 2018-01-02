@@ -97,6 +97,10 @@ p {
   font-family: "Zeyada";
   font-size: 45px; }
 
+.footer-title {
+  font-family: "Zeyada";
+  font-size: 45px; }
+
 p {
   font-family: "Open Sans";
   font-size: 14px; }
@@ -170,6 +174,15 @@ a:hover {
 
 .footer {
   float: left; }
+
+.footer-content {
+  float: left;
+  height: 223px; }
+
+.footer-content {
+  background-image: url("../images/footer-top-overlay.png"), url("../images/footer-bottom-right.png"), url("../images/footer-bottom-bg.jpg");
+  background-repeat: no-repeat, repeat-x;
+  background-position: left top,right bottom,left top; }
 
 .banner1 {
   display: block;
