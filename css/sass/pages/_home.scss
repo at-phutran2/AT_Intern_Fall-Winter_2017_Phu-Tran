@@ -72,8 +72,16 @@
       width: 100%;
     }
   }
-  .new-title {
+  .news-title a {
+    display: block;
     text-align: center;
+  }
+  .news-time {
+    display: block;
+    text-align: center;
+  }
+  .news-content {
+    padding: 20px 0px 20px 20px;
   }
   .btn-primary {
   position: absolute;
@@ -85,26 +93,58 @@
 .col-right {
   float:left;
   margin-left:20px;
-  max-width: 30%;
+  max-width: 35%;
 }
-.col-right {
-  border: 1px solid map-get($color, border-color);
-}
-.about {
+ .about .about-content, .about-image {
+  display: inline-block;
+  // float: left;
+  margin: 30px 0px 30px 40px;
+  width: 33%;
+ }
+
+ .about-image img{
+    border-radius: 50%;
+ }
+.categories ul li {
   position: relative;
-  border: 1px solid map-get($color, border-color);;
+  border-bottom: 1px solid map-get($color, border-color);
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 80%;
+  margin-left: 20px;
 }
-  .categories {
-  position: relative;
-  border: 1px map-get($color, border-color);
+.categories ul {
+  padding-bottom: 15px;
+  padding-top: 20px;
+  font-size: 14px;
+  font-family: $font-primary;
 }
-.tags {
-  position: relative;
-  border: 1px map-get($color, border-color);
+
+ .tags ul {
+  // display: inline-block;
+  padding: 40px 20px 30px 30px;
+   
+//   border: 1px map-get($color, border-color);
 }
-.instagram {
-  position: relative;
-  border: 1px solid map-get($color, border-color);
+.tags ul li {
+  display: inline-block;
+  padding: 20px 25px 0px 0px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: $font-primary;
+  }
+ .instagram-content {
+  padding: 15px 15px ;
+}
+.instagram ul {
+  padding-left: 30px;
+}
+.instagram li{
+  display: inline-block;
+  display: inline-block;
+  width: 30%;
+  padding-right: 2.4%;
+  padding-top: 10px;
 }
 .aside-title {
   position: absolute;
@@ -112,119 +152,13 @@
   transform: translateX(-50%);
   top: -23px;
   font-family: $font-title;
-  color: map-get($color, a); 
+  color: map-get($color, a);
+  background-color: white;
+  padding: 0px 20px;
+  text-align: center;
   }
-
-// .wrap-content{
-//   padding: 49px, 10px, 12px;
-//   text-align: center;
-// }
-
-// .right-container {
-//   width: 89%;
-//   margin: auto;
-//   max-width: 730px;
-//   max-height: 586px;
-//   margin-bottom: 100px;
-//   p {
-//     margin: 48px 21px ;
-//   }
-// }
-// .best-location {
-//   float:right;
-// }
-
-  
-
-
-// // .banner1-img:before {
-// //   margin: 10px;
-// //   display: block;
-// // }
-// .main-content {
-//   width: 100%; 
-//   margin: 17px; 
-// }
-// .company-info-about {
-//   padding: 10px;
-//   text-align: center;
-//     padding: 21px 0px;
-//     margin-top: 30px;
-//     // border-top: 1px solid map-get($color, light);
-//     // border-bottom: 1px solid map-get($color, light);
-  
-//       p {
-//         font-size: 17px;
-//         line-height: 1.8em;
-//         // -webkit-margin-before: 1em;
-//         // -webkit-margin-after: 1em;
-//       }
-//  }
-
-// // .best-location {
-// //   .aside-left-best-location {
-// //   }
-// //  }
-// //  }
-// // .categories-list {
-// //     .catagories-item {
-// //     text-transform: uppercase;
-// //     }
-
-// //  }
-// //  .tags-list {
-// //     .tags-item a {
-// //     text-transform: uppercase;
-// //     }
-// // }
-// // .container{
-// //   max-width: 1140px;
-// //   margin: 0 auto;
-// //   padding: 0 40px;
-// //   .left-container{
-// //   display: block;
-// //   width: 100%;
-// //   }
-// //   .best-location {
-// //   width: 50%;
-// //   float: left;
-// //   background-image: url("../images/left-side-tsunami.jpg");
-// //   background-repeat: no-repeat;
-// //   background-position: left;
-// //   }
-// //   .time-holiday {
-// //     width: 50%;
-// //     clear: left;
-// //     float: left;
-// //     background-image: url("../images/left-side-tsunami.jpg");
-// //     background-repeat: no-repeat;
-// //   }
-// //   .right-container {
-// //   display: block;
-// //   text-align: center;
-// //   padding: 12px 0 0;
-// //   width: 100%;
-// //     width: 100%;
-// //     float:right;
-// //     clear: left;
-// //   }
-// //   .about {
-// //     width: 50%;
-// //     float: right;
-// //   }
-// //   .categories {
-// //     width: 50%;
-// //     float: right;
-// //     clear: right;
-// //   }
-// //   .tags {
-// //     width: 50%;
-// //     float: right;
-// //     clear: right;
-// //   }
-// //   .instagram {
-// //     width: 50%;
-// //     float: right;
-// //     clear: right;
-// //   } 
-// // }
+.col-right >section {
+  margin-bottom: 40px;
+  position: relative;
+  border: 1px solid map-get($color, border-color);
+}

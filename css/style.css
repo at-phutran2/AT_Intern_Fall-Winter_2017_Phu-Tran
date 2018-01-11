@@ -165,24 +165,79 @@ a:hover {
       content: ''; }
   .navigation .menu-item:after {
     content: '/';
-    color: #b6b4b4;
+    color: #f0eff0;
     top: 3px;
     position: absolute;
     right: -5px;
     font-weight: 700;
     font-size: 13px; }
 
-.footer {
-  float: left; }
-
-.footer-content {
-  float: left;
-  height: 223px; }
-
 .footer-content {
   background-image: url("../images/footer-top-overlay.png"), url("../images/footer-bottom-right.png"), url("../images/footer-bottom-bg.jpg");
   background-repeat: no-repeat, repeat-x;
   background-position: left top,right bottom,left top; }
+
+.footer-content {
+  float: left;
+  height: 400px;
+  display: block;
+  clear: both; }
+
+.footer-content section {
+  float: left;
+  width: 22%;
+  padding-left: 2%;
+  padding-top: 70px; }
+
+.footer-about {
+  margin-left: 7%; }
+
+.rights {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding-top: 60px; }
+
+.form-input {
+  border: none;
+  background: white;
+  padding: 15px 30px 15px 10px;
+  margin-top: 10px; }
+
+.btn-submit {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 5px 30px;
+  border: none;
+  font-family: "Zeyada";
+  font-size: 27px; }
+
+.footer-site-info {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  line-height: 11px;
+  padding: 10px; }
+
+.footer-links-content .footer-menu li {
+  display: block;
+  font-size: 14px;
+  line-height: 25px;
+  padding-bottom: 25px; }
+
+.footer-links-content .menu-item a:hover {
+  color: #5da5b9; }
+
+.footer-links-content .menu-item a:before {
+  content: ">";
+  padding-right: 10px; }
+
+.icon-social {
+  list-style-type: none; }
+  .icon-social li {
+    display: inline-block;
+    margin-right: 15px; }
 
 .banner1 {
   display: block;
@@ -214,7 +269,7 @@ a:hover {
   margin: auto; }
 
 .content-about {
-  border: 1px solid #b6b4b4;
+  border: 1px solid #f0eff0;
   width: 100%;
   margin: 40px 0px;
   border-left: none;
@@ -236,7 +291,7 @@ a:hover {
   margin: 14px 0px 21px; }
 
 .news {
-  border: 1px solid #b6b4b4;
+  border: 1px solid #f0eff0;
   margin-bottom: 100px;
   position: relative;
   padding-bottom: 50px; }
@@ -246,8 +301,14 @@ a:hover {
     display: block; }
     .news .news-image img {
       width: 100%; }
-  .news .new-title {
+  .news .news-title a {
+    display: block;
     text-align: center; }
+  .news .news-time {
+    display: block;
+    text-align: center; }
+  .news .news-content {
+    padding: 20px 0px 20px 20px; }
   .news .btn-primary {
     position: absolute;
     left: 50%;
@@ -257,26 +318,52 @@ a:hover {
 .col-right {
   float: left;
   margin-left: 20px;
-  max-width: 30%; }
+  max-width: 35%; }
 
-.col-right {
-  border: 1px solid #b6b4b4; }
+.about .about-content, .about-image {
+  display: inline-block;
+  margin: 30px 0px 30px 40px;
+  width: 33%; }
 
-.about {
+.about-image img {
+  border-radius: 50%; }
+
+.categories ul li {
   position: relative;
-  border: 1px solid #b6b4b4; }
+  border-bottom: 1px solid #f0eff0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 80%;
+  margin-left: 20px; }
 
-.categories {
-  position: relative;
-  border: 1px #b6b4b4; }
+.categories ul {
+  padding-bottom: 15px;
+  padding-top: 20px;
+  font-size: 14px;
+  font-family: "Open Sans"; }
 
-.tags {
-  position: relative;
-  border: 1px #b6b4b4; }
+.tags ul {
+  padding: 40px 20px 30px 30px; }
 
-.instagram {
-  position: relative;
-  border: 1px solid #b6b4b4; }
+.tags ul li {
+  display: inline-block;
+  padding: 20px 25px 0px 0px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: "Open Sans"; }
+
+.instagram-content {
+  padding: 15px 15px; }
+
+.instagram ul {
+  padding-left: 30px; }
+
+.instagram li {
+  display: inline-block;
+  display: inline-block;
+  width: 30%;
+  padding-right: 2.4%;
+  padding-top: 10px; }
 
 .aside-title {
   position: absolute;
@@ -284,4 +371,12 @@ a:hover {
   transform: translateX(-50%);
   top: -23px;
   font-family: "Zeyada";
-  color: #5da5b9; }
+  color: #5da5b9;
+  background-color: white;
+  padding: 0px 20px;
+  text-align: center; }
+
+.col-right > section {
+  margin-bottom: 40px;
+  position: relative;
+  border: 1px solid #f0eff0; }
